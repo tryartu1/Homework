@@ -1,0 +1,4 @@
+answer = 0
+for number in range(1,1000):
+    answer += number ** number
+print(str(answer)[-10:])
