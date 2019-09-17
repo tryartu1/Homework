@@ -1,0 +1,20 @@
+t = 40755
+h = 40755
+p = 40755
+tN = 285
+hN = 143
+pN = 165
+
+while True:
+    if (t <= h) & (t <= p):
+        tN += 1
+        t = int(tN * (tN + 1) / 2)
+    elif (h <= t) & (h <= p):
+        hN += 1
+        h = int(hN * (3 * hN - 1) / 2)
+    elif (p <= t) & (p <= h):
+        pN += 1
+        p = pN * (2 * pN - 1)
+    if (t == h) & (t == p):
+        print(str(t))
+        break
